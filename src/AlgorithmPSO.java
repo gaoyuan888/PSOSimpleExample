@@ -118,11 +118,15 @@ public class AlgorithmPSO {
 
     }
 
-    //运行我们的算法
+    /**
+     * 运行我们的算法
+     * @param args
+     */
     public static void main(String[] args){
         AlgorithmPSO ts = new AlgorithmPSO();
         ts.init();
-        ts.PSO(100);//为了方便演示，我们暂时迭代10次。
+        //为了方便演示，我们暂时迭代10次。
+        ts.PSO(100);
 
 //        datatest.a = 10;
 //
