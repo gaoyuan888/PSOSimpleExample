@@ -51,7 +51,10 @@ public class AlgorithmPSO {
         }
     }
 
-    public void init(){ //初始化
+    /**
+     * 初始化
+     */
+    public void init() {
         x = new double[n];
         v = new double[n];
         y = new double[n];
@@ -82,7 +85,11 @@ public class AlgorithmPSO {
         return a > b ? a : b;
     }
 
-    //粒子群算法
+    /**
+     * 粒子群算法
+     *
+     * @param max
+     */
     public void PSO(int max){
         for (int i = 0; i < max; i++) {
             double w=0.4;
