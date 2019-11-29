@@ -1,15 +1,33 @@
 /**
- * https://github.com/dengfaheng/PSOSimpleExample
+ * @Author yaoyizhou
+ * @Doc 粒子群算法
+ * @date 2019-11-29
+ *
  */
 public class AlgorithmPSO {
     /**
      * 粒子个数，这里为了方便演示，我们只取两个，观察其运动方向
      */
     int n = 2;
-    double[] y;
+    /**
+     * 变量
+     */
     double[] x;
+    /**
+     * 变量
+     */
+    double[] y;
+    /**
+     * 方向
+     */
     double[] v;
+    /**
+     * 认知能力,可理解与局部最优迭代方向相关
+     */
     double c1=2;
+    /**
+     * 社会信息,可理解与全局最优迭代方向相关
+     */
     double c2=2;
     /**
      * 每个粒子自己到目前为止发现的最好位置(pbest)
